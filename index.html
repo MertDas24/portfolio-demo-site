@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert's Portfolio</title>
+    <meta name="description" content="Mert'in demo portfolio sitesi - HTML/CSS/JS öğrenme projesi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Arka plan efekt katmanı-->
+    <div id="top"></div>
+    <div class="bg-blur bg-blur-1"></div>
+    <div class="bg-blur bg-blur-2"></div>
+
+    <!--HEADER / NAVBAR-->
+    <header class="header" id="top">
+        <nav class="nav container">
+            <a href="#top" class="logo">
+                <span class="logo-dot"></span>
+                Mert<span class="gradient-text">Dev</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat">
+                ≡
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkımda</a></li>
+                <li><a href="#skills" class="nav-link">Yetenekler</a></li>
+                <li><a href="#projects" class="nav-link">Projeler</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+
+
+            <button class="theme-btn" id="themeBtn" aria-label="Tema Değiştir"></button>
+                </nav>
+    </header>
+
+
+    <main>
+        <!--HERO-->
+        <section class="hero section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <p class="hero-badge">Junior web developer adayı</p>
+                    <h1>
+                        Modern, responsive ve kullanıcı dostu web siteleri geliştiriyorum.
+                        <span class="gradient-text">Geliştirmeyi öğreniyorum</span>
+                    </h1>
+                    <p class="hero-desc">HTML, CSS VE JavaScript ile kullanıcı dostu arayüzler geliştiriyorum.
+                    Hedefim: Gerçek projeler ortaya koyarak front-end geliştirme becerilerimi ilerletmek ve sektörde deneyim kazanmak.
+                    </p>
+                
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Projelerimi Gör</a>
+                        <a href="#contact" class="btn btn-secondary">İletişime Geç</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <h3>10+</h3>
+                            <p>Mini proje hedefi</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>%100</h3>
+                            <p>Öğrenmeye Açık ve Odaklı</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="glass-card code-card">
+                    <div class="code-card-top">
+
+                    <span></span><span></span><span></span>
+                    </div>
+                    <pre><code>&lt;section class="hero"&gt;
+                        &lt;h1&gt;Merhaba, ben Mert!&lt;/h1&gt;
+                        &lt;p&gt;Front-end geliştirme konusunda ilerlemek isteyen bir developer.&lt;/p&gt;
+                        &lt;button&gt;Projelerim&lt;/button&gt;
+                        &lt;/section&gt;
+                    </code></pre>   
+                </div>
+            </div>
+        </section>
+        
+      <!--ABOUT-->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-title reveal">
+                    <p class="section-kicker">Hakkımda</p>
+                    <h2>Kod yazarken mantığını öğrenmeye çalışıyorum ve bunu keyifle yapıyorum</h2>
+                    <p>
+                        Hedefim sadece çalışan sayfa yapmak değil:yaptığım kodun neden çalıştığını,hangi durumda ne kullanım gerektiğini anlamak.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card reveal">
+                        <h3>Hedefim 🎯</h3>
+                        <p>Front-end alanında güçl bir temel oluşturup, gerçek projelerle portföyümü geliştirmek ve iş fırsatlarına hazırlanmak</p>
+                    </div>
+
+                    <div class="about-card glass-card reveal">
+                        <h3>Öğrenme Tarzım 🧠</h3>
+                        <p>adım adım, "neden böyle yaptık?" sorusuna cevap veren bir yöntemle öğrenmek.Kopyala-yapıştır değil , tekrar edebilmek ve kodu anlamak.</p>
+                    </div>
+
+                    <div class="about-card glass-card reveal">
+                        <h3>Çalışma Mantığım ⚙️</h3>
+                        <p>Her projede detaylara odaklanarak, kodun mantığını ve işleyişini anlamaya çalışıyorum. Kodu yazarken hem hata ayıklama hem de test etme konusunda deneyim kazanıyorum. Önce basit sürüm, sonra geliştirme: tasarım, etkileşim, responsive, temiz kod ve düzenli yapı.</p>
+                    </div>
+            </div>
+     </div>
+</section>
+
+         <!--SKILLS-->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-title reveal">
+                    <p class="section-kicker">Yetenekler</p>
+                    <h2>Kullandığım temel teknolojiler</h2>
+                    </div>
+
+                    <div class="skills-grid">
+                        <article class="skill-card glass-card reveal">
+                            <h3>HTML5</h3>
+                            <p>Web sayfalarının yapısını oluşturmak için HTML kullanıyorum. Semantik etiketlerle temiz ve erişilebilir kod yazmaya özen gösteriyorum. (section, nav, main, main, article vb.)</p>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="85%"></div>
+                            </div>
+                        </article>
+
+                        <article class="skill-card glass-card reveal">
+                            <h3>CSS3</h3>
+                            <p>Stil ve tasarım için CSS kullanıyorum; responsive tasarım, flexbox, grid, animasyon ve modern görünüm.</p>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="80%"></div>
+                            </div>
+                        </article>
+
+                        <article class="skill-card glass-card reveal">
+                            <h3>JavaScript</h3>
+                            <p>DOM işlemleri, event yönetimi ve etkileşimli arayüz davranışları için deneyim kazanıyorum</p>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="70%"></div>
+                            </div>
+                        </article>
+                    </div>
+            </div>
+        </section>
+
+            <!--PROJECTS-->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-title reveal">
+                    <p class="section-kicker">Projeler</p>
+                    <h2>Demo Projelerim</h2>
+                    <p>(Hazırlık aşamasında...)</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card glass-card reveal">
+                        <div class="project-image">🐾</div>
+                        <div class="project-body">
+                        <h3>Sokak Hayvanları Bağış Sitesi</h3>
+                        <p>Bağış butonları, ilerleme çubuğu ve teşekkür mesajı içeren bir bağış (demo) platformu.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">Projeyi İncele</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card reveal">
+                        <div class="project-image">📚</div>
+                        <div class="project-body">
+                        <h3>To-Do List Uygulaması</h3>
+                        <p>Görev ekleme, silme,tamamlandı işaretleme mantığını öğrendiğim mini proje.</p>
+                        <div class="project-tags">
+                            <span>DOM</span>
+                            <span>Events</span>
+                            <span>Local Uı</span>
+                        </div>
+                        <a href="#" class="project-link">Projeyi İncele</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card glass-card reveal">
+                        <div class="project-image">🎨</div>
+                        <div class="project-body">
+                        <h3>Hava Durumu Arayüzü (demo)</h3>
+                        <p>Kart düzeni, ikon alanları ve respnsive tasarımı pratik etmek için.</p>
+                        <div class="project-tags">
+                            <span>Grid</span>
+                            <span>Cards</span>
+                            <span>Responsive</span>
+                        </div>
+                        <a href="#" class="project-link">Projeyi İncele</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+            <!--CONTACT-->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="contact-card glass-card reveal">
+                    <div>
+                        <p class="section-kicker">İletişim</p>
+                        <h2>Bir demo proje veya staj fırsatı için iletişime geçelim!</h2>
+                        <p>(Hazırlık aşamasında...)</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" placeholder="Adın" required>
+                        <input type="email" placeholder="E-posta Adresin" required>
+                        <textarea placeholder="Mesajın" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                        <p class="form-message" id="formMessage"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2026 Mert Daş - Portfolio Demo</p>
+            <a href="#top" class="back-to-top">Yukarı Çık 🔝</a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

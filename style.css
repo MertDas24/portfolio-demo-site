@@ -730,6 +730,60 @@
                 align-items: center;
                }
 
+               /* ===== Mobil garanti paketi ===== */
+@media (max-width: 760px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Menü butonu görünsün */
+  .menu-toggle {
+    display: inline-grid !important;
+    place-items: center;
+  }
+
+  /* Menü linkleri mobilde açılır-kapanır panel olsun */
+  .nav-links {
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(92%, 520px);
+    border-radius: 18px;
+    padding: 0.6rem;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    background: rgba(11, 16, 32, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Hero butonları alt alta da iyi dursun */
+  .hero-actions {
+    gap: 0.6rem;
+  }
+
+  /* Kart gridleri tek sütun */
+  .about-grid,
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Sayfa sağa taşmasın (mobilde çok işe yarar) */
+html, body {
+  overflow-x: hidden;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
 
             }
 

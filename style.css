@@ -784,6 +784,54 @@ section {
     scroll-margin-top: 90px;
 }
 
+/* ===== NAVBAR MOBILE FIX (portrait garanti) ===== */
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: inline-grid !important;
+    place-items: center;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(92%, 520px);
+    border-radius: 18px;
+    padding: 0.6rem;
+    display: none !important;
+    flex-direction: column;
+    align-items: stretch;
+    background: rgba(11, 16, 32, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    z-index: 9999;
+  }
+
+  .nav-links.open {
+    display: flex !important;
+  }
+
+  /* Dikeyde taşma/yan kayma olmasın */
+  .nav-link {
+    border-radius: 12px;
+  }
+}
+
+/* Mobilde sağa taşmayı engelle */
+html, body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .about-grid,
+  .skills-grid,
+  .projects-grid,
+  .contact-card {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 
             }
 
